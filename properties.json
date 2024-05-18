@@ -2,5 +2,9 @@
   "GHOST_ADMIN_URL": "http://localhost:2368/ghost/",
   "OLD_GHOST_ADMIN_URL": "http://localhost:3002/ghost/",
   "USERNAME": "darth@vader.com",
-  "PASSWORD": "yosoytupadre2"
+  "PASSWORD": "yosoytupadre2",
+    "tagName":"Tag de prueba",
+    "tagColor":"19a429",
+    "tagSlug":"Slug del Tag",
+    "tagDescription":"Este es un tag de prueba"
 }
