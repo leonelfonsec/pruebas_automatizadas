@@ -1,13 +1,10 @@
-# Ghost e2e
+# Pruebas automatizadas
 
-## Team
+## Equipo 28
 
 | Nombre | Correo electrónico |
 | --- | ---|
-| Andrea Villamizar | af.villamizarr1@uniandes.edu.co |
-| Angello Villegas | a.villegasc2@uniandes.edu.co |
 | Nelson Leonel Fonseca | n.fonsecao@uniandes.edu.co |
-| Zamir Narro | j.narro@uniandes.edu.co |
 
 ## Entorno:
 - Node v16.20.2

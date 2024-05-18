@@ -1,0 +1,16 @@
+node_modules
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Kraken
+reports/
+.kraken/
+
+#Backstop
+backstop_data/bitmaps_reference
+backstop_data/bitmaps_test
+
+#resemblejs
+results

@@ -1,0 +1,6 @@
+{
+  "GHOST_ADMIN_URL": "http://localhost:2368/ghost/",
+  "OLD_GHOST_ADMIN_URL": "http://localhost:3002/ghost/",
+  "USERNAME": "darth@vader.com",
+  "PASSWORD": "yosoytupadre2"
+}
