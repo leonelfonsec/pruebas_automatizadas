@@ -1,5 +1,3 @@
-import { DashboardPage } from "./DashboardPage";
-
 export class LoginPage {
   visit() {
     cy.visit(Cypress.env('GHOST_ADMIN_URL') + '#/signin')
@@ -13,7 +11,6 @@ export class LoginPage {
     cy.get('#identification').type(email)
     cy.get('#password').type(password)
     cy.get("[data-test-button='sign-in']").click()
-    return new DashboardPage()
   }
 
   loginOld(email, password) {
@@ -21,6 +18,5 @@ export class LoginPage {
     cy.get("[name='password']").type(password)
     cy.get("button.login").click()
     cy.wait(1000)
-    return new DashboardPage()
   }
 }

@@ -16,7 +16,7 @@
 
 - Clonar el repositorio
 ```bash
-git clone git@github.com:jnarro-miso/ghost-e2e.git
+git clone https://github.com/leonelfonsec/pruebas_automatizadas.git
 ```
 
 - Instalar dependencias

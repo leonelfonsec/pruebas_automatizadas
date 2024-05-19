@@ -8,7 +8,7 @@ describe('Verificar que la creación de tags sea exitosa', () => {
     loginPage.visit();
     cy.wait(1000);
     loginPage.login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'));    
-    cy.wait(5000);
+    cy.wait(6000);
     Cypress.on('uncaught:exception', (err, runnable) => {
       console.error('Uncaught exception', err);
       return false;

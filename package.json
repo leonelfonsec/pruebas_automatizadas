@@ -1,5 +1,5 @@
 {
-  "name": "ghost-e2e",
+  "name": "pruebas_automatizadas",
   "version": "1.0.0",
   "description": "",
   "main": "cypress.config.js",
