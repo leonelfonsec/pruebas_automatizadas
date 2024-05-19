@@ -102,3 +102,99 @@ Then('I should see {kraken-string}', async function(tagName) {
         throw new Error(`Expected title "${tagName}" but found "${texto}"`);
      }
  });
+
+ When('I click new post', async function() {
+    let element = await this.driver.$('a[title="New post"]');
+    return await element.click();
+});
+
+When('I enter title of post {kraken-string}', async function (postPrueba) {
+    let textarea = await this.driver.$('textarea[data-test-editor-title-input]');
+    await textarea.setValue(postPrueba);
+});
+
+When('I enter post {kraken-string}', async function (post) {
+    let contenteditableDiv = await this.driver.$('div[data-lexical-editor="true"]');
+    await contenteditableDiv.click(); // Hacer clic para asegurar el foco en el div editable
+    await contenteditableDiv.keys(post); // Ingresar el texto en el div editable
+});
+
+When('I click on the post settings button', async function() {
+    let settingsButton = await this.driver.$('button.settings-menu-toggle');
+    await settingsButton.click();
+});
+
+When('I click on the Ver Tags', async function() {
+    let verTagsElement = await this.driver.$('span.ember-power-select-status-icon');
+    await verTagsElement.click();
+});
+
+When('I click on the Tag de prueba', async function() {
+    let tagElement = await this.driver.$('li.ember-power-select-option');
+    await tagElement.click();
+});
+
+When('I click on the Publish button', async function() {
+    let publishButton = await this.driver.$('button.gh-btn-editor.darkgrey.gh-publish-trigger');
+    await publishButton.click();
+});
+
+When('I click on the Continue button', async function() {
+    let continueButton = await this.driver.$('button[data-test-button="continue"]');
+    await continueButton.click();
+});
+
+When('I click on the Publish post, right now button', async function() {
+    let publishButton = await this.driver.$('button[data-test-button="confirm-publish"]');
+    await publishButton.click();
+});
+
+When('I click on the Back to dashboard link', async function() {
+    let dashboardLink = await this.driver.$('a[href="#/dashboard/"]');
+    await dashboardLink.waitForClickable();
+    await dashboardLink.click();
+});
+
+When('I click on the Posts link', async function() {
+    let postsLink = await this.driver.$('a[data-test-nav="posts"]');
+    await postsLink.click();
+});
+
+Then('I verify that the text Tag de prueba is present', async function() {
+    let tagElement = await this.driver.$('span.midgrey-l2.fw5');
+    let text = await tagElement.getText();
+    if (text !== 'Tag de prueba') {
+        throw new Error('The text "Tag de prueba" is not present');
+    }
+});
+
+When('I click on the linked post', async function() {
+    let linkedPost = await this.driver.$('a[title="List posts tagged with \'Tag de prueba\'"]');
+    await linkedPost.click();
+});
+
+When('I click on the post link', async function() {
+    let postLink = await this.driver.$('a[href="#/editor/post/6649edfb700d4e31c06944a5/"]');
+    await postLink.click();
+});
+
+
+When('I click on the View post link', async function() {
+    let postViewLink = await this.driver.$('a.post-view-link');
+    let url = await postViewLink.getAttribute('href');
+    await this.driver.url(url);
+});
+
+Then('I verify that the tag link within the post is present', async function() {
+    let tagLink = await this.driver.$('a.gh-article-tag[href="http://localhost:2368/tag/slug-del-tag/"]');
+    let isPresent = await tagLink.isExisting();
+    if (!isPresent) {
+        throw new Error('The tag link within the post is not present');
+    }
+});
+
+
+
+
+
+
