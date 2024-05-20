@@ -8,9 +8,9 @@ module.exports = {
   env: {
     GHOST_SITE_URL: 'http://localhost:2368/',
     GHOST_ADMIN_URL: 'http://localhost:2368/ghost/',
-    OLD_GHOST_SITE_URL: 'http://localhost:3002/',
-    OLD_GHOST_ADMIN_URL: 'http://localhost:3002/ghost/',
+    //GHOST_SITE_URL: 'https://ghost-rpq7.onrender.com/',
+    //GHOST_ADMIN_URL: 'https://ghost-rpq7.onrender.com/ghost/',
     USERNAME: "darth@vader.com",
-    PASSWORD: "yosoytupadre2"
+    PASSWORD: "yosoytupadre"
   }
 };

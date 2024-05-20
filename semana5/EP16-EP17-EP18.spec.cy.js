@@ -1,4 +1,4 @@
-import { LoginPage } from '../../pageObjects/LoginPage';
+import { LoginPage } from '../cypress/pageObjects/LoginPage';
 import { faker } from '@faker-js/faker';
 
 describe('Verificar que la creación de tags sea exitosa', () => {
