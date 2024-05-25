@@ -7,9 +7,9 @@
 | Nelson Leonel Fonseca | n.fonsecao@uniandes.edu.co |
 
 ## Entorno:
-- Node v16.20.2
+- Node v18.12.1
 - Cypress 13.8.1
-- Ghost 5.82.11 desplegado en https://ghost-rpq7.onrender.com/
+- Ghost 5.82.11 desplegado en [https://ghost-rpq7.onrender.com/](https://ghost-y5kp.onrender.com/ghost/#/dashboard)
 
 ## Instalación
 
