@@ -9,7 +9,7 @@ export class LoginPage {
     cy.get('#identification').type(email)
     cy.get('#password').type(password)
     cy.get("[data-test-button='sign-in']").click()
-    cy.wait(2000);
+    cy.wait(5000);
     return new DashboardPage()
   }
 

@@ -36,7 +36,7 @@ export class TagsPage {
 
   goToTags() {
     cy.visit(Cypress.env('GHOST_ADMIN_URL') + '#/tags')
-    cy.wait(1000);
+    cy.wait(2000);
     return new TagsPage();
   }
 

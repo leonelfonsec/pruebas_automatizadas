@@ -13,7 +13,7 @@ describe("Pruebas en diferentes navegadores para PC", () => {
   beforeEach(() => {
     cy.setCookie('ghost-admin-api-session', 'your-session-token');
     loginPage.visit();
-    cy.wait(2000);
+    cy.wait(3000);
     loginPage.login(Cypress.env("USERNAME"), Cypress.env("PASSWORD"));
     cy.wait(3000);
     Cypress.on("uncaught:exception", (err, runnable) => {

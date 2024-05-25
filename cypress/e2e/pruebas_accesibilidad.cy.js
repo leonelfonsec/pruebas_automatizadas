@@ -27,24 +27,28 @@ describe("Pruebas de accesibilidad", () => {
   it('E31-Prueba de accesibilidad en dashboard', () => {
     dashboardPage.goToDashboard();
     cy.injectAxe();
+    cy.log('Prueba de accesibilidad para el dashboard');
     cy.checkA11y(null, null, logViolations);
   });
 
   it('E32-Prueba de accesibilidad en posts', () => {
     postPage.goToPosts();
     cy.injectAxe();
+    cy.log('Prueba de accesibilidad para los posts');
     cy.checkA11y(null, null, logViolations);
   });
 
   it('E33-Prueba de accesibilidad en pages', () => {
     dashboardPage.goToPages();
     cy.injectAxe();
+    cy.log('Prueba de accesibilidad para las pages');
     cy.checkA11y(null, null, logViolations);
   });
 
   it('E34-Prueba de accesibilidad en tags', () => {
     tagsPage.goToTags();
     cy.injectAxe();
+    cy.log('Prueba de accesibilidad para los tags');
     cy.checkA11y(null, null, logViolations);
   });
 
