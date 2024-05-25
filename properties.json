@@ -1,9 +1,0 @@
-{
-  "GHOST_ADMIN_URL": "https://ghost-rpq7.onrender.com/ghost/",
-  "USERNAME": "darth@vader.com",
-  "PASSWORD": "yosoytupadre",
-    "tagName":"Tag de prueba",
-    "tagColor":"19a429",
-    "tagSlug":"Slug del Tag",
-    "tagDescription":"Este es un tag de prueba"
-}

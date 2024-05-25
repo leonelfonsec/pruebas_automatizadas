@@ -1,14 +1,35 @@
-module.exports = {
+const { defineConfig } = require('cypress');
+
+module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      on('task', {
+        log(message) {
+          console.log(message);
+          return null;
+        },
+        table(message) {
+          console.table(message);
+          return null;
+        }
+      });
     },
+    specPattern: "cypress/e2e"
   },
-  video: true,
   env: {
-    GHOST_SITE_URL: 'https://ghost-rpq7.onrender.com/',
-    GHOST_ADMIN_URL: 'https://ghost-rpq7.onrender.com/ghost/',
-    USERNAME: "darth@vader.com",
-    PASSWORD: "yosoytupadre"
+    //GHOST_SITE_URL: 'http://localhost:2368/',
+    //GHOST_ADMIN_URL: 'http://localhost:2368/ghost/',
+    GHOST_SITE_URL: 'https://ghost-y5kp.onrender.com/',
+    GHOST_ADMIN_URL: 'https://ghost-y5kp.onrender.com/ghost/',
+    USERNAME: "fonsecaleonel2@gmail.com",
+    PASSWORD: "pruebasautomatizadas",
+    ABLE_TO_SAVE: true
   }
-};
+  //"reporter": "mochawesome"
+  // "reporterOptions": {
+  //   "reportDir": "cypress/reports",
+  //   "overwrite": false,
+  //   "html": true,
+  //   "json": true
+  // }
+});
