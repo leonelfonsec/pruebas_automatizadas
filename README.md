@@ -31,10 +31,22 @@ npm install
 ### Tests de Cypress:
 ```bash
 npx cypress run --headed --browser chrome --spec "cypress/e2e/pruebas_pc.cy.js"
+```
+```bash
 npx cypress run --headed --browser electron --spec "cypress/e2e/pruebas_pc.cy.js"
+```
+```bash
 npx cypress run --headed --browser edge --spec "cypress/e2e/pruebas_pc.cy.js"
+```
+```bash
 npx cypress run --headed --browser chrome --spec "cypress/e2e/pruebas_smartphone.cy.js"
+```
+```bash
 npx cypress run --headed --browser electron --spec "cypress/e2e/pruebas_smartphone.cy.js"
+```
+```bash
 npx cypress run --headed --browser edge --spec "cypress/e2e/pruebas_smartphone.cy.js"
+```
+```bash
 npx cypress run --headed --browser chrome --spec "cypress/e2e/pruebas_accesibilidad.cy.js"
 ```
