@@ -53,3 +53,4 @@ npx cypress run --headed --browser edge --spec "cypress/e2e/pruebas_smartphone.c
 ```bash
 npx cypress run --headed --browser chrome --spec "cypress/e2e/pruebas_accesibilidad.cy.js"
 ```
+LOS RESULTADOS DE LAS PRUEBAS ESTAN DENTRO DE LA CARPETA EVIDENCIAS DEL REPOSITORIO
