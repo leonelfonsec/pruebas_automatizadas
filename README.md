@@ -16,7 +16,8 @@
 - Clonar el repositorio
 ```bash
 git clone https://github.com/leonelfonsec/pruebas_automatizadas.git
-
+```
+```bash
 cd .\pruebas_automatizadas
 ```
 
