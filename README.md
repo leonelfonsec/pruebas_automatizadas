@@ -16,6 +16,8 @@
 - Clonar el repositorio
 ```bash
 git clone https://github.com/leonelfonsec/pruebas_automatizadas.git
+
+cd .\pruebas_automatizadas
 ```
 
 - Instalar dependencias
